@@ -123,6 +123,10 @@ body {
   row-gap: 3rem;
 }
 
+#work-section .container .row {
+  row-gap: 9rem;
+}
+
 .card-work {
   display: flex;
   align-items: start;
@@ -305,5 +309,9 @@ body {
 
   #work-section .container .row .col-12:nth-child(even) .card-work {
     flex-direction: column;
+  }
+
+  #work-section .container .row {
+    row-gap: 4rem;
   }
 }
