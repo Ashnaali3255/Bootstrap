@@ -10,10 +10,6 @@ body {
   scroll-behavior: smooth;
 }
 
-header {
-  width: 75%;
-}
-
 .navbar-expand-lg {
   background-color: #fff;
 }
@@ -37,12 +33,21 @@ header {
   color: #344563;
 }
 
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler i {
+  color: #6070ff;
+}
+
 #headline {
   position: relative;
   min-height: 50rem;
   width: 100%;
   background: url("./assets/images/header-bg.png");
-  background-size: cover;
+  background-position: center;
+  background-size: 98%;
   background-repeat: no-repeat;
   background-color: #fff;
   border-bottom-left-radius: 5.5rem;
@@ -50,8 +55,8 @@ header {
 
 #headline .container {
   width: 75%;
-  top: 17rem;
   position: relative;
+  top: 17rem;
 }
 
 .headline-title {
@@ -111,13 +116,29 @@ header {
 
 @media (max-width: 767.98px) {
   #headline {
+    min-height: 35rem;
     background: url("./assets/images/header-bg-mobile.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: #fff;
   }
-  
-  
-}
 
+  #headline .container {
+    position: relative;
+    top: 5rem;
+    width: 95%;
+  }
+
+  .navbar .container {
+    width: 95%;
+  }
+
+  .headline-title {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+    color: #172b4d;
+    line-height: 52px;
+  }
+}
