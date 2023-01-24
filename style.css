@@ -72,16 +72,16 @@ body {
   color: #172b4d;
 }
 
-#headline p {
-  color: var(--grey-text);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+#headline hgroup .headline-title:last-child {
   width: 90%;
 }
 
-#headline hgroup .headline-title:last-child {
-  width: 90%;
+.project-additional-info p {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+  margin: 0;
 }
 
 #headline p {
@@ -106,6 +106,30 @@ body {
   padding-left: 0;
 }
 
+ul li {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  align-items: center;
+  color: #253858;
+  gap: 10px;
+  display: flex;
+  list-style: none;
+}
+
+.project-tags li {
+  background: #ebebff;
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
 .social-links li {
   display: block;
   padding: 7px 13px;
@@ -118,10 +142,12 @@ body {
 .social-links li:nth-child(1) {
   padding-left: 0 !important;
 }
+
 #work-section {
   background: var(--light-white-bg);
   padding: 6rem 0;
 }
+
 #work-section .container {
   display: grid;
   grid-template-columns: 100%;
@@ -144,6 +170,11 @@ body {
   padding: 35px 23px;
 }
 
+.card-work:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
 #work-section .container .row .col-12:nth-child(even) .card-work {
   flex-direction: row-reverse;
 }
@@ -162,15 +193,13 @@ body {
   width: 100%;
   overflow: hidden;
 }
-.card-work:hover {
-  cursor: pointer;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-}
+
 .card-work .image-container img {
   width: 100%;
   overflow: hidden;
   transition: transform 0.5s ease-in-out;
 }
+
 .card-work:hover .image-container img {
   transform: scale(1.1);
 }
@@ -201,19 +230,13 @@ body {
   color: #344563;
 }
 
-.project-additional-info p {
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  color: #7a869a;
-  margin: 0;
-}
 .dot {
   width: 8px;
   height: 8px;
   background: #c1c7d0;
   border-radius: 50%;
 }
+
 .project-description {
   font-weight: 400;
   font-size: 15px;
@@ -222,6 +245,7 @@ body {
   margin: 0;
   width: 90%;
 }
+
 .project-tags {
   display: flex;
   flex-direction: row;
@@ -232,16 +256,6 @@ body {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0.5rem;
-}
-.project-tags li {
-  background: #ebebff;
-  padding: 4px 12px;
-  border-radius: 8px;
-  color: #6070ff;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
 }
 
 .project-btn {
@@ -260,15 +274,18 @@ body {
   cursor: pointer;
   transition: all 0.15s ease-in;
 }
+
 .project-btn:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
 }
+
 .project-btn:active {
   background: #2230d2;
   color: #fff;
 }
+
 .card-work .card-body .project-btn {
   margin-top: 0;
 }
@@ -335,7 +352,7 @@ body {
 
 .accordion-button:not(.collapsed) {
   color: #344563;
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: none;
   border-bottom: none;
   font-weight: 500;
@@ -354,28 +371,6 @@ body {
   flex-direction: row;
 }
 
-.languages .item {
-  width: 122px;
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  padding: 12px;
-  align-items: flex-start;
-}
-
-ul li {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 24px;
-  align-items: center;
-  color: #253858;
-  gap: 10px;
-  display: flex;
-  list-style: none;
-}
-
 .item {
   background: #f7f7f9;
   border-radius: 8px;
@@ -383,6 +378,15 @@ ul li {
   padding: 10px;
   width: 90%;
   height: 20%;
+}
+
+.languages .item {
+  width: 122px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  align-items: flex-start;
 }
 
 .arrow {
@@ -540,13 +544,13 @@ hr {
     background-color: #fff;
   }
 
-  #headline .container {
-    position: relative;
-    top: 5rem;
+  .navbar .container {
     width: 95%;
   }
 
-  .navbar .container {
+  #headline .container {
+    position: relative;
+    top: 5rem;
     width: 95%;
   }
 
