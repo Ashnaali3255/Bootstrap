@@ -10,6 +10,10 @@ body {
   scroll-behavior: smooth;
 }
 
+header {
+  width: 75%;
+}
+
 .navbar-expand-lg {
   background-color: #fff;
 }
@@ -46,8 +50,8 @@ body {
 
 #headline .container {
   width: 75%;
-  position: relative;
   top: 17rem;
+  position: relative;
 }
 
 .headline-title {
@@ -111,5 +115,9 @@ body {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: white;
   }
+  
+  
 }
+
