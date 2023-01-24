@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+      integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">My Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0 nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#work-section"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-section">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-section">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-offset="0"
+      class="scrollspy-example"
+      tabindex="0"
+    >
+      <section id="headline">
+        <div class="container">
+          <hgroup>
+            <h1 class="headline-title">I’m Mariane</h1>
+            <h1 class="headline-title">Glad to see you!</h1>
+          </hgroup>
+          <p class="mt-3">
+            I’m a software developer! I can help you build a product , feature
+            or website Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don’t hestiate to
+            contact me.
+          </p>
+          <a href="#" class="headline-connect-link"> LET’S CONNECT </a>
+
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <img src="./assets/images/icons/twitter.png" alt="twitter" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./assets/images/icons/linkedin.png" alt="linkedin" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./assets/images/icons/medium.png" alt="medium" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./assets/images/icons/github.png" alt="github" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./assets/images/icons/v.png" alt="v" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="work-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="card-work card">
+                <div class="image-container">
+                  <img
+                    src="./assets/images/nature-bg.png "
+                    width="100%"
+                    alt="nature-bg"
+                  />
+                </div>
+                <div class="card-content card-body">
+                  <h2 class="project-title">Tonic</h2>
+                  <div class="project-additional-info">
+                    <h5>CANOPY</h5>
+                    <div class="dot"></div>
+                    <p>Back End Dev</p>
+                    <div class="dot"></div>
+                    <p><time datetime="2015">2015</time></p>
+                  </div>
+                  <p class="project-description">
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required.
+                  </p>
+                  <ul class="project-tags">
+                    <li class="badge">html</li>
+                    <li class="badge">css</li>
+                    <li class="badge">javascript</li>
+                  </ul>
+                  <a type="button" href="#" class="project-btn">
+                    See Project
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card-work card">
+                <div class="image-container">
+                  <img
+                    src="./assets/images/professional-printing.png"
+                    width="100%"
+                    alt="professional-printing"
+                  />
+                </div>
+                <div class="card-content card-body">
+                  <h2 class="project-title">Multi-Post Stories</h2>
+                  <div class="project-additional-info">
+                    <h5>FACEBOOK</h5>
+                    <div class="dot"></div>
+                    <p>Full Stack Dev</p>
+                    <div class="dot"></div>
+                    <p><time datetime="2015">2015</time></p>
+                  </div>
+                  <p class="project-description">
+                    Experimental content creation feature that allows users to
+                    add to an existing story over the course of a day without
+                    spamming their friends.
+                  </p>
+                  <ul class="project-tags">
+                    <li class="badge">html</li>
+                    <li class="badge">Ruby on rails</li>
+                    <li class="badge">css</li>
+                    <li class="badge">javascript</li>
+                  </ul>
+                  <a type="button" href="#" class="project-btn">
+                    See Project
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card-work card">
+                <div class="image-container">
+                  <img
+                    src="./assets/images/project-1.png"
+                    width="100%"
+                    alt="project-1"
+                  />
+                </div>
+                <div class="card-content card-body">
+                  <h2 class="project-title">Facebook 360</h2>
+                  <div class="project-additional-info">
+                    <h5>FACEBOOK</h5>
+                    <div class="dot"></div>
+                    <p>Full Stack Dev</p>
+                    <div class="dot"></div>
+                    <p><time datetime="2015">2015</time></p>
+                  </div>
+                  <p class="project-description">
+                    Exploring the future of media in Facebook's first Virtual
+                    Reality app; a place to discover and enjoy 360 photos and
+                    videos on Gear VR.
+                  </p>
+                  <ul class="project-tags">
+                    <li class="badge">html</li>
+                    <li class="badge">Ruby on rails</li>
+                    <li class="badge">css</li>
+                    <li class="badge">javascript</li>
+                  </ul>
+                  <a type="button" href="#" class="project-btn">
+                    See Project
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card-work card">
+                <div class="image-container">
+                  <img
+                    src="./assets/images/project-2.png"
+                    width="100%"
+                    alt="project-2"
+                  />
+                </div>
+                <div class="card-content card-body">
+                  <h2 class="project-title">Uber Navigation</h2>
+                  <div class="project-additional-info">
+                    <h5>Uber</h5>
+                    <div class="dot"></div>
+                    <p>Lead Developer</p>
+                    <div class="dot"></div>
+                    <p><time datetime="2015">2018</time></p>
+                  </div>
+                  <p class="project-description">
+                    A smart assistant to make driving more safe, efficient, and
+                    fun by unlocking your most expensive computer: your car.
+                  </p>
+                  <ul class="project-tags">
+                    <li class="badge">html</li>
+                    <li class="badge">Ruby on rails</li>
+                    <li class="badge">css</li>
+                    <li class="badge">javascript</li>
+                  </ul>
+                  <a type="button" href="#" class="project-btn">
+                    See Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about-section" class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-12">
+              <div class="content">
+                <h2>About<br />Myself</h2>
+                <p class="para">
+                  Hello I'm a software developer! I can help you build a product
+                  , feature or website Look through some of my work and
+                  experience! If you like what you see and have a project you
+                  need coded, don't hestiate to contact me.
+                </p>
+                <h3>LET'S CONNECT</h3>
+                <ul class="links link2">
+                  <li>
+                    <a title="twitter" href="https://twitter.com/Ashna_Ali1"
+                      ><img src="./Twitter.jpg" alt="twitter"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      title="linkedIn"
+                      href="https://www.linkedin.com/in/ashna-ali-342151255/"
+                      ><img src="./linkedin.jpeg" alt="linkedin"
+                    /></a>
+                  </li>
+                  <li>
+                    <a title="Medium" href="https://medium.com/Ashna_Ali1"
+                      ><img src="./Medium.jpg" alt="medium"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      title="github"
+                      href="https://github.com/Ashnaali3255/Portfolio/tree/Mobile-Branch"
+                      ><img src="./Github.jpg" alt="github"
+                    /></a>
+                  </li>
+                  <li>
+                    <a title="Angelist" href="https://angelist.com/Ashna_Ali1"
+                      ><img src="./Angel.jpg" alt="angelist"
+                    /></a>
+                  </li>
+                </ul>
+                <button class="project-btn">Get My Resume</button>
+              </div>
+            </div>
+            <div class="col-lg-8 col-12 mt-sm-3 mt-lg-0 mt-3">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Languages
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <ul class="items languages">
+                        <li class="item">
+                          <img src="./javascript.jpg" alt="image" />JavaScript
+                        </li>
+                        <li class="item">
+                          <img src="./html.jpg" alt="image" />HTML
+                        </li>
+                        <li class="item">
+                          <img src="./css.jpg" alt="image" />CSS
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Frameworks
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body"></div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Skills
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact-section" class="contact">
+        <div class="contact1">
+          <h2 class="heading">Contact me</h2>
+          <p class="graph">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I'd love
+            to help with it
+          </p>
+          <form
+            class="form"
+            action="https://formspree.io/f/mpznvvba"
+            method="post"
+          >
+            <div class="form-group">
+              <input
+                class="text form-control"
+                type="text"
+                name="myName"
+                placeholder="Yeremias"
+                maxlength="30"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                class="text form-control"
+                type="email"
+                name="myEmail"
+                placeholder="natajayanj14@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <textarea
+                class="message form-control"
+                name="myText"
+                maxlength="500"
+                cols="30"
+                rows="10"
+                placeholder="Write your message here"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="project-btn submit-btn mt-3">
+              Get in Touch
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"
+      integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+      integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
